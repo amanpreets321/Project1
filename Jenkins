@@ -1,0 +1,26 @@
+#!/usr/bin/groovy
+pipeline {
+	agent any
+
+	stages {
+
+		stage('Build') {
+			steps {
+				echo 'Building.inprogress..'
+			}
+		}
+
+		stage('Test') {
+			steps {
+				echo 'Testing.inprogress..'
+			}
+		}
+
+		stage('Deploy') {
+			steps {
+				echo 'Deploying....'
+			}
+		}
+
+	}
+}
